@@ -1,0 +1,13 @@
+[
+	{"url":"img/fma.jpg", "caption":"Full metal alchemist brotherhood, genre: shonen, adventure, dark fantasy"},
+	{"url":"img/sc.jpg", "caption":"Samurai champloo, genre: shonen, adventure"},
+	{"url":"img/yn.jpg", "caption":"Your name, movie, genre: romance"},
+	{"url":"img/chihiro.jpg", "caption":"Spirited away, movie, genre: fantasy"},
+	{"url":"img/sao.jpg", "caption":"Sword art online, genre: shonen, adventure"},
+	{"url":"img/haikyuu.jpg", "caption":"Haikyuu, genre: shonen, sport"},
+	{"url":"img/slime.jpg", "caption":"That Time I Got Reincarnated As A Slime, genre: shonen, adventure"},
+	{"url":"img/vs.jpeg", "caption":"Vinland saga, genre: seinen, action drama"},
+	{"url":"img/kb.jpg", "caption":"Kuroko's Basketball, genre: shonen, sport"},
+	{"url":"img/ghibli.jpg", "caption":"All movies Studio Ghibli"}
+	
+]

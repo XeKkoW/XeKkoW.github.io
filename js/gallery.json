@@ -1,0 +1,13 @@
+{
+	"images":[
+		{"url":"img/dbz.png", "caption":"Dragon ball, Shonen"},
+		{"url":"img/bleach.jpg", "caption":"Bleach, Shonen"},
+		{"url":"img/snk.jpg", "caption":"Shingeki no kyojin, Shonen"},
+		{"url":"img/mha.jpg", "caption":"My hero academia? Shonen"},
+		{"url":"img/bc.jpg", "caption":"black clover, Shonen"},
+		{"url":"img/boruto.png", "caption":"Boruto, Shonen"},
+		{"url":"img/tpn.jpeg", "caption":"the promised neverland, Shonen"},
+		{"url":"img/beel.jpg", "caption":"beelzebub, Shonen"},
+		{"url":"img/chainsaw.jpeg", "caption":"Chainsaw man, Shonen"}
+	]
+}

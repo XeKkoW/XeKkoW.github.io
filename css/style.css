@@ -1,0 +1,653 @@
+/*select <html> and <body> */
+html , body{
+    padding:0;
+    margin:0 auto;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+
+/*select <header> and <main> */
+header, main {
+    text-align:center;
+}
+
+/* select <main> */
+main{
+  position:relative;
+}
+
+/*class for the header for the home page attached to a <header> */
+.headerIndex {
+    background-image:URL("../img/fatgum.gif");
+    background-color:transparent !important;
+    background-size: cover;
+    background-position:center center;
+   background-repeat:no-repeat;
+   line-height:100px;
+   height: 600px;     
+}
+
+/*select all the <p> in the home page header*/
+.headerIndex p{
+  font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+  color: white;
+  text-transform: uppercase;
+  background-attachment: scroll;
+
+}
+
+/* class for the navigation bar for the header attached to a >nav> */
+.navbar{
+  font: bold 20px/1.4 'Open Sans', arial, sans-serif;
+  color: white;
+  text-transform: uppercase;
+}
+
+/*select all <ul> in the navigation bar*/
+.navbar ul{
+    list-style-type: none;
+    padding: 0px;
+    margin-bottom: 50px;
+    position: relative;
+  }
+
+/*select all <li> in the navugation bar*/
+.navbar li{
+    display:inline-block;
+    zoom:1;
+    text-align: center;
+}
+
+/*select all <li> in the navugation bar that are hovered*/
+.navbar li:hover > ul {
+    display: block;  
+  }
+
+  /*select all <a> in the navugation bar*/
+.navbar a {
+    display: block;
+    padding: 0px 15px;
+    height: 20px;
+    line-height: 0px;
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    position: relative;
+}
+
+/*select all <a> in the navugation bar and create a child that is a white line under the <a>*/
+.navbar a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 0%;
+  position: absolute;
+  background:white;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+/*when <a> is hovered in the navigation bar, the child (white line) appears*/
+.navbar a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+/* class contact which is a scrolling menu attached to a <div> */
+  .contact {
+    font: bold 16px/1.4 'Open Sans', arial, sans-serif;
+    display: block;
+    float: right;
+    text-decoration: none;
+    background-color:transparent !important;
+    height: 30px;
+  }
+  
+  /*select all <nav> in the contact menu*/
+  .contact nav {
+    padding-top: 2px;
+    padding-right: 10px;
+  }
+  
+  /*select all <ul> in the contact menu*/
+  .contact nav ul{
+  list-style-type: none;
+  padding: 0px;
+  margin-bottom: 50px;
+  padding-right: 30px;
+  position: relative;
+  }
+  
+  /*select all <li> in the contact menu*/
+  .contact nav li {
+    float: left;
+    text-align: center;
+  }
+  
+  /*select all <ul> that are direct child of <li> in the contact menu*/
+  .contact nav li>ul{
+    display: none;
+    position: absolute;
+  }
+  
+  /*select all <ul> that are direct child of <li> that are hovered in the contact menu*/
+  .contact nav li:hover > ul {
+    display: block;
+  }
+  
+/*select all <ul> that are hovered and that are direct child of <li> in the contact menu*/
+  .contact nav ul:hover > li{
+    display: block;
+  }
+  
+  /*select all <a> in the contact menu*/
+  .contact a {
+    display: block;
+    color:white;
+    height: 25px;
+    line-height: 25px;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+  }
+  
+  /*select all <a> that are hovered in the contact menu*/
+  .contact nav a:hover {
+    background-color: black;
+    
+  }
+
+  /*class logo attached to a <h1>*/
+.logo{
+  font: bold 50px/1.4 'Press Start 2P', cursive; 
+  text-transform: uppercase;
+  color: white;
+    margin-top: 0px;
+    margin-bottom: -50px; 
+    height: 150px;
+    padding-top: 50px;
+}
+
+/*class that center a part of the page attached to a <div>*/
+.indexCenter{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  align-content: center;
+  min-height: 800px;
+  height: auto;
+  background-color: black;
+}
+
+/* class attched to <article> */
+.article1 {
+  color: white;
+  background-color: black;
+  padding: 10px; 
+  
+}
+
+/*class that center a part of the page attached to a <div>*/
+.indexCenter2{
+  display: block;
+  align-self: center;
+  width: 60%;
+  background-color: black;
+  height: auto;
+}
+
+/* Selected all .article1 in the .indecCenter*/
+.indexCenter .article1{
+  text-align: center;
+  align-self: center;
+
+}
+
+/* Selected all <p> in the .indecCenter*/
+.indexCenter .article1 p{
+padding-bottom: 3%;
+padding-top: 1%;
+}
+
+/*class for a fixed background in the home page attached to a <div>*/
+.between1 {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  align-content: center;
+  height: 600px;
+  background-image:URL("../img/between1.jpg");
+  background-color:transparent !important;
+    background-size: cover;
+   background-repeat:no-repeat;
+  background-attachment:fixed;   
+
+}
+
+/*same  as between1*/
+.between2 {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  background-image:URL("../img/between2.jpg");
+  background-color:transparent !important;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;   
+
+}
+
+/*same  as between1*/
+.between3 {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  background-image:URL("../img/between3.png");
+  background-color:transparent !important;
+    background-size: cover;
+   background-repeat:no-repeat;
+  background-attachment:fixed;   
+
+}
+
+/*an item that is center in the between attached to a <header>*/
+.betweenItem{
+  display: block;
+  align-self: center;
+  width: 20%;
+  padding: 0;
+  margin: 0;
+  color: white;
+  background-color: black;
+}
+
+.betweenItem a{
+  font: 40px/1.4 'Dancing Script', cursive;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+/* select all <footer>*/
+footer{
+  text-align: center;
+  width: 100%;
+  line-height: 100px; 
+  background-color: black;
+  color: white;
+}
+
+
+
+/* Manga */
+/*class attached to a <header>*/
+.headerManga{
+  background-color: black;
+    background-size: cover;
+    background-position:center center;
+   background-repeat:no-repeat;
+   line-height:100px;
+   height: 300px;
+}
+
+/*class attached to a <div>*/
+.container1  {
+  margin: 0 auto;
+  width: 96%;
+}
+
+/* class attached to a <h1>*/
+.pagetitle{
+  font: bold 30px/1.4 'Times New Roman', serif;
+}
+
+/*class attached to a <div>*/
+.whiteline{
+  background-color: white;
+  display: block;
+  height: 1px;
+}
+
+/*class attached to an <article>*/
+.article2{
+  text-align: left;
+  color: white;
+  background-color: black;
+
+}
+
+/*select all <h2> in the class .article2*/
+.article2 h2 {
+  font: 20px/1.4 'Times New Roman', serif;
+}
+
+/*class for a image taht is a background beacause it's a flex box because there is an object inside, it's attached to a <div>*/
+.float {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+/*class that is a flax box with a background, it's attached to a <div>*/
+.top1{
+  background-image: URL(../img/top1.jpg);
+  display: flex;
+  width: 25%;
+  height: calc(9vw);
+  align-self: center;
+  justify-content: center;
+  align-items: baseline;
+  align-content: center;
+  background-color:transparent !important;
+    background-size: cover;
+   background-repeat:no-repeat;
+
+}
+/*same as top1*/
+.top2{
+  background-image: URL(../img/top2.jpg);
+  display: flex;
+  width: 25%;
+  height: calc(9vw);
+  align-self: center;
+  justify-content: center;
+  align-items: baseline;
+  align-content: center;
+  background-color:transparent !important;
+    background-size: cover;
+   background-repeat:no-repeat;
+
+}
+/*same as top1*/
+.top3{
+  background-image: URL(../img/top3.png);
+  display: flex;
+  width: 25%;
+  height: calc(9vw);
+  align-self: center;
+  justify-content: center;
+  align-items: baseline;
+  align-content: center;
+  background-color:transparent !important;
+    background-size: cover;
+   background-repeat:no-repeat;
+
+}
+/*same as top1*/
+.top4{
+  background-image: URL(../img/top4.jpg);
+  display: flex;
+  width: 25%;
+  height: calc(9vw);
+  align-self: center;
+  justify-content: center;
+  align-items: baseline;
+  align-content: center;
+  background-color:transparent !important;
+    background-size: cover;
+   background-repeat:no-repeat;
+
+}
+/*same as top1*/
+.top5{
+  background-image: URL(../img/top5.jpg);
+  display: flex;
+  width: 25%;
+  height: calc(9vw);
+  align-self: center;
+  justify-content: center;
+  align-items: baseline;
+  align-content: center;
+  background-color:transparent !important;
+    background-size: cover;
+   background-repeat:no-repeat;
+
+}
+/*same as top1*/
+.top6{
+  background-image: URL(../img/top6.jpg);
+  display: flex;
+  width: 25%;
+  height: calc(9vw);
+  align-self: center;
+  justify-content: center;
+  align-items: baseline;
+  align-content: center;
+  background-color:transparent !important;
+    background-size: cover;
+   background-repeat:no-repeat;
+
+}
+/*same as top1*/
+.top7{
+  background-image: URL(../img/ylia.jpg);
+  display: flex;
+  width: 25%;
+  height: calc(9vw);
+  align-self: center;
+  justify-content: center;
+  align-items: baseline;
+  align-content: center;
+  background-color:transparent !important;
+    background-size: cover;
+   background-repeat:no-repeat;
+
+}
+/*same as top1*/
+.top8{
+  background-image: URL(../img/ds.jpg);
+  display: flex;
+  width: 25%;
+  height: calc(9vw);
+  align-self: center;
+  justify-content: center;
+  align-items: baseline;
+  align-content: center;
+  background-color:transparent !important;
+    background-size: cover;
+   background-repeat:no-repeat;
+
+}
+/*same as top1*/
+.top9{
+  background-image: URL(../img/hxh.jpg);
+  display: flex;
+  width: 25%;
+  height: calc(9vw);
+  align-self: center;
+  justify-content: center;
+  align-items: baseline;
+  align-content: center;
+  background-color:transparent !important;
+    background-size: cover;
+   background-repeat:no-repeat;
+
+}
+/* class attched to a <h1>, it's the item inside the flex box .top*/
+.topItem{
+  display: block;
+  align-self: center;
+  width: 20%;
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-size: 50px;
+  text-shadow: 2px 2px rgb(100, 100, 100);
+}
+
+/*class attached to a div, it makes the text inside float right, to be next to the class .top*/
+.text{
+  display: block;
+  align-self: baseline;
+  width: 150%;
+  float: right;
+  padding-left: 10px;
+}
+/*select all the <h3> in a .text*/
+ .text h3{
+  padding-left: 0px;
+ }
+
+ /*select all the <h2> in a .container1*/
+ .container1 h2 {
+  font: 20px/1.4 'Times New Roman', serif;
+  text-align: left;
+  text-decoration: underline;
+  color: white;
+ }
+
+ /* class attached to a <div>*/
+.gallery{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; /*add space between all item*/
+  /*width and height are auto to prevent problem with image that are to big*/
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+/* class that represent an item for the gallery, it's attached to nothing, it's used in JS*/
+.galleryItem{
+  display: flex;
+  flex-direction: column;
+  /*with 33% the image are too close to each other*/
+  width: 26%;
+  margin-bottom: 15px;
+  padding: 25px;
+  text-decoration: none;
+  color: white;
+  box-sizing: border-box;
+}
+
+/* Select all img for the galleryItem, it's attached to nothing, it's used in JS*/
+.galleryItem img{
+  width: 100%;
+  height: 100%;
+}
+
+/* Select the caption for galleryItem*/
+.galleryItem caption{
+  margin-top: 5px;
+  font-size: 0.75em;
+}
+
+/*select all the galleryItem that are hovered*/
+.galleryItem:hover{
+  background-color: gray;
+  color: white;
+}
+
+/*class that is attached to a <h2>*/
+.title2 {
+  font: 20px/1.4 'Times New Roman', serif;
+  text-align: left;
+text-decoration: underline;
+  color: white;
+  padding-bottom: 30px;
+}
+
+
+/*carousel*/
+/*class attached to a <div>*/
+.carousel {
+  position: relative;
+  /*width and height of the carousel and of an image*/
+  width: 1000px;
+  height: 500px; 
+  /*hide the part of an item that is bigger that the carousel*/
+  overflow: hidden;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px gray;
+}
+/*class attached to a <div>*/
+.carousel-images {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  /*width of all the image in the carousel*/
+  width: 8000px; 
+  height: 500px;
+  transition: left .5s ease-in-out;
+}
+/*class attached to a <div>*/
+.carousel-images2 {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  /*width of all the image in the carousel*/
+  width: 10000px; 
+  height: 500px;
+  transition: left .5s ease-in-out;
+}
+/*select all img in the class carousel-images*/
+.carousel-images img {
+  width: 1000px;
+  height: 500px;
+}
+
+/*select all img in the class carousel-images*/
+.carousel-images2 img {
+  width: 1000px;
+  height: 500px;
+}
+
+/*select all nav in the class carousel*/
+.carousel nav {
+
+  position: absolute;
+  z-index: 2;
+  width: 1000px;
+  height: 500px;
+  line-height: 80px;
+}
+
+/*select all <a> in the class carousel, it creates a circle navigation*/ 
+.carousel nav a {
+  /*make the shape of <nav> look like a circle*/
+  border-radius: 50%;
+  text-decoration: none;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 30pt;
+  padding: 0px 25px;
+  transition: all .25s ease;
+  opacity: 0;
+  background-color: black;
+  margin-top: 210px;
+}
+/*select all <a> in a <nav> that is hovered in the class carousel*/
+.carousel nav:hover a {
+  transition: all .25s ease;
+  opacity: 1;
+  background-color: rgba(0,0,0,0.15);
+}
+
+/*float the button to the left*/
+.carousel nav a:first-child {
+  float: left;
+}
+
+/*float the button to the right*/
+.carousel nav a:last-child {
+  float: right;
+}
+
+/* class that place the caption over the image*/
+.carousel-caption {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  color:black;
+  background-color:white;
+  height: 50px;
+  line-height: 50px;
+  margin: 0px;
+}
+
